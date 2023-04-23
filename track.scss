@@ -1,0 +1,186 @@
+$body-font: "Poppins", "Helvetica", "sans-serif";
+$headers-font: "Poppins", "Helvetica", "sans-serif";
+
+// PADDING
+$padding-width--heavy: 0px 70px;
+
+// COLORS
+$light-gray: #f4f4f4;
+$primary-red: #ed1e28;
+$secondary-red: #fe6d62;
+$primary-blue: #0000FF;
+$secondary-blue: #91b3fa;
+$primary-green: #008000;
+$secondary-green: #90ee90;
+$primary-orange: #FE5000;
+$canvas: #ffffff;
+
+html {
+    height: 100%;
+}
+
+
+body {
+    background: url(imgs/wall2);
+}
+
+.footer {
+    background-color: #001440;
+    padding: 10px;
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    color: white;
+    text-align: center;
+    font-family: 'Lato', sans-serif;
+    font-size: 24px;
+}
+
+.process-space{
+    display: flex;
+    gap: 10px;
+}
+
+.warning {
+    width: 33px;
+    height: 33px;
+}
+
+.navbar{
+    margin-top: 30px;
+    color: white;
+    text-align: center;
+    font-family: 'Lato', sans-serif;
+    font-size: 100px;
+    margin-bottom: 2vw;;
+
+}
+
+
+.progress-container {
+    padding: $padding-width--heavy;
+    display: flex;
+    flex-direction: column;
+}
+
+.progress-bar-container{
+    display: flex;
+    flex-direction: column;
+    gap: 2vw;
+    justify-content: space-evenly;
+    height: 15vw;
+}
+
+.check1 {
+    width: 10vw;
+    height: 10vw;
+}
+
+.check2 {
+    width: 9vw;
+    height: 9vw;
+}
+
+.check3 {
+    width: 9vw;
+    height: 9vw;
+}
+
+
+.filler {
+    width: 10vw;
+    height: 10vw;
+}
+
+.progress-decoration {
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.progress-bar {
+    background-color: transparent;
+    border: 3px $light-gray solid;
+    border-radius: 20px;
+    position: relative;
+    // margin: 4px 0 16px 0;
+    height: 30px;
+    width: 100%;
+
+    .completed-bar {
+        background: linear-gradient(to left, $primary-red, $secondary-red);
+        border-radius: 20px;
+        color: $light-gray;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        height: 100%;
+        width: 0;
+        opacity: 1;
+        transition: width 2s ease 0.4s;
+        padding: 0 8px;
+
+        &__dashed {
+            width: 96%;
+            border: 2px dashed $canvas;
+        }
+
+        &__bag {
+            font-size: 1.5rem;
+            margin-left: 4px;
+        }
+    }
+
+    .completed-bar-2 {
+        background: linear-gradient(to left, $primary-blue, $secondary-blue);
+        border-radius: 20px;
+        color: $light-gray;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        height: 100%;
+        width: 0;
+        opacity: 1;
+        /*add another transition -> getting to the next point -> say it takes 22mins to get from A->B
+        then predicted_time - current_time - initialized_time = duaration of animation,
+        */
+        transition: width 2s ease 0.4s;
+        padding: 0 8px;
+
+        &__dashed {
+            width: 96%;
+            border: 2px dashed $canvas;
+        }
+
+        &__bag {
+            font-size: 1.5rem;
+            margin-left: 4px;
+        }
+    }
+
+    .completed-bar-3 {
+        background: linear-gradient(to left, $primary-green, $secondary-green);
+        border-radius: 20px;
+        color: $light-gray;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        height: 100%;
+        width: 0;
+        opacity: 1;
+        transition: width 2s ease 0.4s;
+        padding: 0 8px;
+
+        &__dashed {
+            width: 96%;
+            border: 2px dashed $canvas;
+        }
+
+        &__bag {
+            font-size: 1.5rem;
+            margin-left: 4px;
+        }
+    }
+}

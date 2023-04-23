@@ -1,0 +1,155 @@
+html {
+  height: 100%;
+}
+
+body {
+  background: url(imgs/wall2);
+}
+
+.footer {
+  background-color: #001440;
+  padding: 10px;
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  color: white;
+  text-align: center;
+  font-family: "Lato", sans-serif;
+  font-size: 24px;
+}
+
+.process-space {
+  display: flex;
+  gap: 10px;
+}
+
+.warning {
+  width: 33px;
+  height: 33px;
+}
+
+.navbar {
+  margin-top: 30px;
+  color: white;
+  text-align: center;
+  font-family: "Lato", sans-serif;
+  font-size: 100px;
+  margin-bottom: 2vw;
+}
+
+.progress-container {
+  padding: 0px 70px;
+  display: flex;
+  flex-direction: column;
+}
+
+.progress-bar-container {
+  display: flex;
+  flex-direction: column;
+  gap: 2vw;
+  justify-content: space-evenly;
+  height: 15vw;
+}
+
+.check1 {
+  width: 10vw;
+  height: 10vw;
+}
+
+.check2 {
+  width: 9vw;
+  height: 9vw;
+}
+
+.check3 {
+  width: 9vw;
+  height: 9vw;
+}
+
+.filler {
+  width: 10vw;
+  height: 10vw;
+}
+
+.progress-decoration {
+  display: flex;
+  flex-wrap: nowrap;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.progress-bar {
+  background-color: transparent;
+  border: 3px #f4f4f4 solid;
+  border-radius: 20px;
+  position: relative;
+  height: 30px;
+  width: 100%;
+}
+.progress-bar .completed-bar {
+  background: linear-gradient(to left, #ed1e28, #fe6d62);
+  border-radius: 20px;
+  color: #f4f4f4;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+  width: 0;
+  opacity: 1;
+  transition: width 2s ease 0.4s;
+  padding: 0 8px;
+}
+.progress-bar .completed-bar__dashed {
+  width: 96%;
+  border: 2px dashed #ffffff;
+}
+.progress-bar .completed-bar__bag {
+  font-size: 1.5rem;
+  margin-left: 4px;
+}
+.progress-bar .completed-bar-2 {
+  background: linear-gradient(to left, #0000FF, #91b3fa);
+  border-radius: 20px;
+  color: #f4f4f4;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+  width: 0;
+  opacity: 1;
+  /*add another transition -> getting to the next point -> say it takes 22mins to get from A->B
+  then predicted_time - current_time - initialized_time = duaration of animation,
+  */
+  transition: width 2s ease 0.4s;
+  padding: 0 8px;
+}
+.progress-bar .completed-bar-2__dashed {
+  width: 96%;
+  border: 2px dashed #ffffff;
+}
+.progress-bar .completed-bar-2__bag {
+  font-size: 1.5rem;
+  margin-left: 4px;
+}
+.progress-bar .completed-bar-3 {
+  background: linear-gradient(to left, #008000, #90ee90);
+  border-radius: 20px;
+  color: #f4f4f4;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+  width: 0;
+  opacity: 1;
+  transition: width 2s ease 0.4s;
+  padding: 0 8px;
+}
+.progress-bar .completed-bar-3__dashed {
+  width: 96%;
+  border: 2px dashed #ffffff;
+}
+.progress-bar .completed-bar-3__bag {
+  font-size: 1.5rem;
+  margin-left: 4px;
+}/*# sourceMappingURL=track.css.map */
