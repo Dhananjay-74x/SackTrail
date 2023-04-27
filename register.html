@@ -7,6 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Registration</title>
     <link rel="stylesheet" href="style-register.css">
+    <script src="register.js" defer></script>
 </head>
 
 <body>
@@ -43,9 +44,25 @@
                 </div>
             </div>
 
-            <div class="form-container">
+            <div class="form-container" id="hideno">
                 <div class="form-container">
-                    <input class="form-field" type="text" name="uid" id="uid" placeholder="RFID" required>
+                    <input class="form-field" type="number" name="noBags" id="noBags" placeholder="Number of Bags" required>
+                </div>
+            </div>
+
+            <div class="form-container" id="uid1">
+                <div class="form-container">
+                    <input class="form-field" type="text" name="uid1" placeholder="RFID" required>
+                </div>
+            </div>
+            <div class="form-container" id="uid2">
+                <div class="form-container">
+                    <input class="form-field" type="text" name="uid2"  placeholder="RFID">
+                </div>
+            </div>
+            <div class="form-container" id="uid3">
+                <div class="form-container">
+                    <input class="form-field" type="text" name="uid3" placeholder="RFID">
                 </div>
             </div>
 

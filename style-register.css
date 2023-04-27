@@ -49,9 +49,9 @@ form {
   flex-direction: column;
   width: 25%;
   justify-content: center;
-  gap: 60px;
+  gap: 45px;
   align-items: center;
-  padding: 3.9vw;
+  padding: 1vw;
   background-color: aliceblue;
 }
 
@@ -90,3 +90,6 @@ input{
   background: transparent;
 }
 
+#uid1, #uid2, #uid3 {
+  display: none;
+}
