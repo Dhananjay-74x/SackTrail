@@ -3,7 +3,8 @@ html {
 }
 
 body {
-  background: url(imgs/wall2);
+  background: url(imgs/wall5);
+  background-size: cover;
 }
 
 .footer {
