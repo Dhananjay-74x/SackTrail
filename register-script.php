@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -7,13 +8,15 @@
     <link rel="stylesheet" href="register-success.css">
     <title>Success</title>
 </head>
+
 <body>
     <div class="container">
         <img src="imgs/checked.png" alt="">
         <h1>Registered Successfully!</h1>
     </div>
-    
+
 </body>
+
 </html>
 
 
@@ -23,7 +26,9 @@
 $firstName = $_REQUEST['firstname'];
 $lastName = $_REQUEST['lastname'];
 $pnr = $_REQUEST['pnr'];
-$uid = $_REQUEST['uid'];
+$uid1 = $_REQUEST['uid1'];
+$uid2 = $_REQUEST['uid2'];
+$uid3 = $_REQUEST['uid3'];
 
 // connection to db variables
 $servername = "localhost";
@@ -41,7 +46,19 @@ $sql = "INSERT INTO `Passenger_Information` (`PNR`, `First_Name`, `Last_Name`) V
 $conn->query($sql);
 
 
-$sql2 = "UPDATE `RFID` SET `Counter` = '0', `PNR` = '" . $pnr . "' WHERE `RFID`.`UID` = '" . $uid . "';";
+$sql2 = "UPDATE `RFID` SET `Counter` = '0', `PNR` = '" . $pnr . "' WHERE `RFID`.`UID` = '" . $uid1 . "';";
 $conn->query($sql2);
+
+if (isset($uid2)) {
+    echo "detected 2 bags";
+    $sql3 = "UPDATE `RFID` SET `Counter` = '0', `PNR` = '" . $pnr . "' WHERE `RFID`.`UID` = '" . $uid2 . "';";
+    $conn->query($sql3);
+}
+
+if (isset($uid3)) {
+    echo "detected 3 bags";
+    $sql3 = "UPDATE `RFID` SET `Counter` = '0', `PNR` = '" . $pnr . "' WHERE `RFID`.`UID` = '" . $uid3 . "';";
+    $conn->query($sql3);
+}
 
 ?>
