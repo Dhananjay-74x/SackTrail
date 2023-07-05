@@ -1,6 +1,7 @@
 # SackTrail
 
-## Project by Dhananjay Gaur, Shashank Mishra
+## Project by Shashank Mishra, Dhananjay Gaur
+ 
 
 To start the project use the following command to start the apache server
 
