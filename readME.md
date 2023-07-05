@@ -42,7 +42,7 @@ It also includes interfacing existing NodeMCU ESP8266 with packaged Arduino IDE,
 
 
 
-To start the project use the following command to start the apache server
+To start the project use the following command to start the apache server:
 
 $ sudo /opt/lampp/lampp start
 
