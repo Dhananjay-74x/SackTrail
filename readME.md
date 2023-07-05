@@ -40,6 +40,8 @@ It also includes interfacing existing NodeMCU ESP8266 with packaged Arduino IDE,
 ![44e502fc-0a26-4156-a6bf-c07e8cfc760d](https://github.com/Dhananjay-74x/SackTrail/assets/86489966/ba7b9967-7263-4c91-8d46-d9edfe736358)
 
 
+
+
 To start the project use the following command to start the apache server
 
 $ sudo /opt/lampp/lampp start
